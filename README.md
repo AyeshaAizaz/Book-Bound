@@ -1,5 +1,5 @@
-<img width="1080" height="2400" alt="Screenshot_2026-07-10-00-15-24-014_com example bookbound 1" src="https://github.com/user-attachments/assets/9147cea0-54de-42e5-a149-ffdfd560ae23" />🌿 #Bookbound: Aesthetic Book-Tracking & Literary Journal Application
-##Overview
+🌿 <h2>Bookbound: Aesthetic Book-Tracking & Literary Journal Application</h2>
+Overview
 Bookbound is an aesthetic, highly intentional book-tracking and literary journal application designed for passionate readers who view books as an experience rather than a mere checklist. Moving away from monotonous, text-heavy data entry apps, Bookbound leverages an organic, library-inspired interface to offer a sensory, tactile user experience reminiscent of cozy independent bookstores and premium midnight studies.
 
 Built using a strict, decoupled Model-View-Controller (MVC) state architecture in Flutter, the app integrates public book search engines, localized device caching, and an advanced dynamic bookshelf layout system to help users beautifully log current reads, plan upcoming journeys, evaluate thematic scores, and record structured literary summaries.
