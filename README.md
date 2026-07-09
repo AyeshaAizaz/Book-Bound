@@ -8,22 +8,22 @@ Key Features
 1. Dynamic Staggered Bookshelf Layout (Home Screen)
 Instead of standard, rigid grid tiles, Bookbound builds a realistic, alternating library shelving matrix that expands dynamically as a user's library grows:
 
-<ul>Shelf Tier A (Rows 0, 4, 8...): Holds up to 3 Books + 1 Classic Leafy Potted Plant aligned to the Left.</ul>
+<ul><li></li>Shelf Tier A (Rows 0, 4, 8...): Holds up to 3 Books + 1 Classic Leafy Potted Plant aligned to the Left.</li>
 
-<ul>Shelf Tier B (Rows 1, 5, 9...): Full-width expansion holding up to 4 Books across the entire wooden beam with no decorative clutter.</ul>
+<li>Shelf Tier B (Rows 1, 5, 9...): Full-width expansion holding up to 4 Books across the entire wooden beam with no decorative clutter.</li>
 
-<ul>Shelf Tier C (Rows 2, 6, 10...): Holds up to 3 Books + 1 Trailing Jade Vine Plant Variant shifted to the Right.</ul>
+<li>Shelf Tier C (Rows 2, 6, 10...): Holds up to 3 Books + 1 Trailing Jade Vine Plant Variant shifted to the Right.</li>
 
-<ul>Shelf Tier D (Rows 3, 7, 11...): Full-width expansion holding up to 4 Books.</ul>
+<li>Shelf Tier D (Rows 3, 7, 11...): Full-width expansion holding up to 4 Books.</li></ul>
 
 2. OpenLibrary API Search Engine
 Integrates with the public OpenLibrary search engine via asynchronous HTTP channels to easily add books to shelves:
 
-<ul>Direct Field Targeting: Uses an explicit parameter pipeline (fields=key,title,author_name,cover_i,first_sentence) to capture book details while minimizing device bandwidth payloads.</ul>
+<ul><li></li>Direct Field Targeting: Uses an explicit parameter pipeline (fields=key,title,author_name,cover_i,first_sentence) to capture book details while minimizing device bandwidth payloads.</li>
 
-<ul>Snippet Summaries: Extracts the first_sentence array element directly inside the search view to act as a quick list preview.</ul>
+<li>Snippet Summaries: Extracts the first_sentence array element directly inside the search view to act as a quick list preview.</li>
 
-<ul>Work Key Resolution: Pulls the unique OpenLibrary Work ID (/works/OLXXXXW) to facilitate deep fetching for full descriptions on demand.</ul>
+<li>Work Key Resolution: Pulls the unique OpenLibrary Work ID (/works/OLXXXXW) to facilitate deep fetching for full descriptions on demand.</li></ul>
 
 3. Comprehensive Book Evaluation & Review Sheet
 A highly detailed, two-column data entry workspace built for deep reading reflections:
@@ -35,27 +35,27 @@ A highly detailed, two-column data entry workspace built for deep reading reflec
 <ul>Deep Reflections Section: Dedicated text fields to capture long-form summary notes, favorite thoughts, newly discovered facts, and interesting vocabulary words learned during reading.</ul>
 
 4. Dual-Layer Start Sequence
-<ul>Native Pre-Boot Loader: Powered by flutter_native_splash, it locks the device screen to an exact background color hex token during the native cold start, eliminating blank white device screen flashes.</ul>
+<ul><li>Native Pre-Boot Loader: Powered by flutter_native_splash, it locks the device screen to an exact background color hex token during the native cold start, eliminating blank white device screen flashes.</li>
 
-<ul>MVC Animated Core Splash: Seamlessly transitions into a 1.5-second CurvedAnimation layout sequence featuring a smooth opacity fade-in paired with a gentle scale-up effect while internal disk repositories initialize.</ul>
+<li>MVC Animated Core Splash: Seamlessly transitions into a 1.5-second CurvedAnimation layout sequence featuring a smooth opacity fade-in paired with a gentle scale-up effect while internal disk repositories initialize.</li></ul>
 
 5. Persistent Local Storage
 Utilizes key-value localized device caching (SharedPreferences or local JSON mapping) to permanently store user book documents, active reading states, and individual metric matrices completely offline.
 
-Technical Highlights & Architecture
-The MVC Structural Blueprint
+<h2>Technical Highlights & Architecture</h2>
+<h3>The MVC Structural Blueprint</h3>
 The application strictly isolates state, business logic, and UI display rendering into independent architectural layers:
 
-<ul>Model Layer (ReviewModel): Implements an entirely immutable data blueprint where all properties are declared final. State mutations are safely processed via explicit cloning (copyWith) to ensure zero runtime side effects.</ul>
+<ul><li>Model Layer (ReviewModel): Implements an entirely immutable data blueprint where all properties are declared final. State mutations are safely processed via explicit cloning (copyWith) to ensure zero runtime side effects.</li>
 
-<ul>Controller Layer (ReviewPageController, HomePageController): Encapsulates backend storage tasks, sanitizes raw text data arrays, and manages state variables.</ul>
+<li>Controller Layer (ReviewPageController, HomePageController): Encapsulates backend storage tasks, sanitizes raw text data arrays, and manages state variables.</li>
 
-<ul>View Layer (ReviewPage, HomePage): Operates as a passive UI wrapper that reacts to controller updates using performance-optimized ListenableBuilder widgets.</ul>
+<li>View Layer (ReviewPage, HomePage): Operates as a passive UI wrapper that reacts to controller updates using performance-optimized ListenableBuilder widgets.</li></ul>
 
 Core Optimization Mechanisms
-<ul>The Text Cursor Guard Loop: Inside the ReviewPageController, user-typed date strings (DD/MM/YYYY) are cleanly parsed into native DateTime structures without dispatching interface refresh signals, keeping the user's software keyboard cursor position perfectly stable while they type.</ul>
+<ul><li>The Text Cursor Guard Loop: Inside the ReviewPageController, user-typed date strings (DD/MM/YYYY) are cleanly parsed into native DateTime structures without dispatching interface refresh signals, keeping the user's software keyboard cursor position perfectly stable while they type.</li>
 
-<ul>Wireframe Silhouette Pre-Loading: Powered by the Skeletonizer package. When the application fetches data from disk, the layout places a structural blueprint layer using dummy placeholder text lengths (e.g., "00/00/0000" or "000" pages) to keep layout dimensions 100% accurate before data settles.</ul>
+<li>Wireframe Silhouette Pre-Loading: Powered by the Skeletonizer package. When the application fetches data from disk, the layout places a structural blueprint layer using dummy placeholder text lengths (e.g., "00/00/0000" or "000" pages) to keep layout dimensions 100% accurate before data settles.</li>
 
 How It Works
 1. Search & Discover
