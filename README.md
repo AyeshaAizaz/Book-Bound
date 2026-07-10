@@ -95,3 +95,11 @@ The application strictly isolates state, business logic, and UI display renderin
 **Social Reading Circles**: Introduce minimal, private reading groups where close friends can view each other’s staggered bookshelves, shared reviews, and custom metric evaluations.
 
 **Literary Insights Dashboard**: Build an interactive data graph interface showing monthly reading streaks, favorite genres, average plot scores, and vocabulary growth over time.
+
+## APP LINK
+
+https://drive.google.com/file/d/1811nJ5Bw0m2sThjJAxKpScltqd97k67O/view?usp=drive_link
+
+## WEB APP LINK
+
+https://bookbound-app.netlify.app/
