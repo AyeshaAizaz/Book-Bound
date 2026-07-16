@@ -11,10 +11,10 @@ Built using a strict, decoupled **Model-View-Controller (MVC)** state architectu
 
 ### 1. Dynamic Staggered Bookshelf Layout (Home Screen)
 Instead of standard, rigid grid tiles, Bookbound builds a realistic, alternating library shelving matrix that expands dynamically as a user's library grows:
-* **Shelf Tier A (Rows 0, 4, 8...):** Holds up to **3 Books + 1 Classic Leafy Potted Plant** aligned to the **Left**.
-* **Shelf Tier B (Rows 1, 5, 9...):** Full-width expansion holding up to **4 Books** across the entire wooden beam with no decorative clutter.
-* **Shelf Tier C (Rows 2, 6, 10...):** Holds up to **3 Books + 1 Trailing Jade Vine Plant Variant** shifted to the **Right**.
-* **Shelf Tier D (Rows 3, 7, 11...):** Full-width expansion holding up to **4 Books**.
+* **Shelf Tier A (Rows 0, 4, 8...):** Holds up to \(x\) books plus 1 classic leafy potted plant, aligned to the Left (where \(x\) is the maximum number of items your screen width allows).
+* **Shelf Tier B (Rows 1, 5, 9...):** Full-width expansion holding as many books as the screen size permits, with no decorative clutter.
+* **Shelf Tier C (Rows 2, 6, 10...):** Holds up to \(x\) books plus 1 trailing jade vine plant variant, shifted to the Right (where \(x\) scales dynamically based on available screen space).
+* **Shelf Tier D (Rows 3, 7, 11...):** Full-width expansion holding as many books as the screen size permits.
 
 ### 2. OpenLibrary API Search Engine
 Integrates with the public OpenLibrary search engine via asynchronous HTTP channels to easily add books to shelves:
@@ -65,23 +65,23 @@ The application strictly isolates state, business logic, and UI display renderin
 ## Screenshots and Visuals Blueprint
 **ANIMATED MVC SPLASH PAGE**: Smooth scale-up and fade-in reveal introducing the application title and its ambient literary subtitle, transitioning seamlessly into the home layout.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/116cf862-1afe-4697-8bca-f5c1bc675a6d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4336f447-a389-4fca-acd7-0318105ff1e4" />
 
 
 ### 📚 DASHBOARD SHELF MANAGEMENT
 **HOME PAGE (TO BE READ SHELF)**: Displays the staggered shelves with plants on alternating sides, holding books you plan to read.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8e33f386-a61c-4d65-9b7e-d21a2db6e8e3" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6f94240c-0e76-4869-b242-41d0df23dd7b" />
 
 
 **ARCHIVE VIEW (READ SHELF)**: Your library of completed journeys, cleanly organized on matching virtual wooden beams.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/21c2be70-a4de-4289-92de-bc4f29894dbc" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d40d1e82-47db-43b0-9c3b-2c8f7d885892" />
 
 
 **CONTEXT MENU PANE / BOTTOM MODAL SHEET**: Triggered by a long-press on any book tile. Provides clean quick-action options to move books between shelves or delete them from your library.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cde82dc2-f8d1-42b0-aa1b-b64a33616ec2" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6a0e32a9-248b-4b69-8c45-981baddfecfe" />
 
 
 ### 🔎 LITERARY EXPLORATION
@@ -89,7 +89,7 @@ The application strictly isolates state, business logic, and UI display renderin
 
 **SEARCH RESULTS LIST TILES**: Displays clean row items containing cover thumbnails, titles, authors, and initial sentence preview snippets.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e5290500-9184-46fc-b673-85bf7bb8b71d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e69a3d08-0bff-414b-b585-d10530cb058c" />
 
 
 ### 📝 JOURNALING & ANALYTICS
@@ -99,11 +99,11 @@ The application strictly isolates state, business logic, and UI display renderin
 
 **IMAGE SELECTOR / CHANGE DISPLAY PICTURE**: Clean overlay card to manually change or refresh book cover image assets.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7a8bec0e-b120-420f-8515-a804843d2893" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1f2c2897-9ff1-44aa-951d-54c6ab90ad79" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f0aa14b6-4d94-428f-8b2d-668f6c9b4c78" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/893a0719-a40d-437a-936a-7afe1562a328" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fbc05fd8-3646-438a-8732-5e899b8b3fac" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cf4d95f9-3198-4b71-b622-ee2c491b4b1c" />
 
 
 ---
